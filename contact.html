@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Front-end Web Developer</title>
+    <link rel="stylesheet" href="port.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Portfolio</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div class="close-icon" onclick="toggleMenu()">✖</div>
+      <ul class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./project.html">Projects</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Contact Me</h1>
+    </header>
+
+    <section class="contact-section">
+      <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="submit_form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <div class="contact-details">
+        <h2>Contact Details</h2>
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i
+          ><a href="mailto:example@email.com"> echuemmanuel918@gmail</a>
+        </p>
+        <p>
+          <i class="fa fa-phone" aria-hidden="true"></i> Phone: +2349039386110
+        </p>
+        <p>
+          <i class="fa fa-map-marker" aria-hidden="true"></i> NAOWA Qtrs, behind
+          state clinic, Asokoro, Abuja.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="contact-info">
+          <h4>Contact Me</h4>
+          <p>Email: echuemmanuel918@gmail.com</p>
+          <p>Phone: 09039386110</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./project.html">Projects</a></li>
+            <!-- <li><a href="#blog">Blog</a></li> -->
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/echu-emmanuel-a7a659281/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href=""
+            ><i class="fa fa-facebook-official" aria-hidden="true"></i
+          ></a>
+          <a href="https://twitter.com/echuemmanuel4"
+            ><i class="fa fa-twitter" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 Echu Emmanuel. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
